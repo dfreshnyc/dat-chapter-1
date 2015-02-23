@@ -15,7 +15,7 @@ for row in read_file:
 
 print "Number of songs released in 1981: %r" % played
 
-#read the csvfile and create new Dict with COMBINED and PlayCount
+#read the rock.csv and create new Dict file with COMBINED and PlayCount columns
 
 with open('rock.csv','rb') as csvfile:
 	new_file = csv.DictReader(csvfile, delimiter=',')
@@ -23,7 +23,7 @@ with open('rock.csv','rb') as csvfile:
 		if row["PlayCount"]:
 			top_plays_title[row["COMBINED"]] += int(row["PlayCount"])
 
-#sort the Dict by PlayCount
+#sort the new Dict by PlayCount
 	
 sorted_songs = sorted(top_plays_title.items(), key=operator.itemgetter(1), reverse = True)
 
