@@ -12,3 +12,11 @@ for n in range(0,31):
 			even_total += fib(n)
 
 print even_total
+
+#x,y = 1, 1
+#even_total = 0
+#while x<= 4000000:
+#	if x % 2 === 0;
+#		even_sum += x
+#	x, y = y, x + y
+#print even_total
